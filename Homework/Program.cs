@@ -17,7 +17,7 @@ namespace Homework
             Hw4 hw4 = new Hw4();
             Hw5 hw5 = new Hw5();
 
-            hw5.SolveEx6();
+            hw1.SolveEx1();
         }
     }    
 }
