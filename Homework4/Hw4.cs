@@ -4,7 +4,7 @@ namespace Homework4
 {
     public class Hw4
     {
-        public int [] CreateAnArrayWithRandom(int a)
+        public int[] CreateAnArrayWithRandom(int a)
         {
             int[] array = new int[a];
             Random rnd = new Random();
@@ -12,7 +12,7 @@ namespace Homework4
             {
                 array[i] = rnd.Next(-100, 100);
             }
-            
+
             return array;
         }
 
@@ -23,7 +23,7 @@ namespace Homework4
             Console.Write($"Массив: ");
 
             for (int i = 0; i < a.Length; i++)
-            {                
+            {
                 Console.Write(a[i] + " ");
             }
 
@@ -33,7 +33,7 @@ namespace Homework4
         public int GetMinElementInArray(int[] a)
         {
             int min = 0;
-            for (int i = 0; i < a.Length; i ++)
+            for (int i = 0; i < a.Length; i++)
             {
                 if (a[i] < min)
                 {
@@ -58,10 +58,10 @@ namespace Homework4
             Console.WriteLine(" ");
             Console.Write($"Максимальный элемент: {GetMaxElementInArray(a)}");
         }
-        public int GetMaxElementInArray(int [] a)
+        public int GetMaxElementInArray(int[] a)
         {
             int max = 0;
-            for (int i = 0; i < a.Length; i ++)
+            for (int i = 0; i < a.Length; i++)
             {
                 if (a[i] > max)
                 {
@@ -88,11 +88,11 @@ namespace Homework4
             Console.WriteLine(" ");
             Console.Write($"Индекс минимального элемента: {GetIndexMinElementInArray(a)}");
         }
-        public int GetIndexMinElementInArray(int [] a)
+        public int GetIndexMinElementInArray(int[] a)
         {
             int index = 0;
             int min = a[0];
-            for (int i = 0; i < a.Length; i ++)
+            for (int i = 0; i < a.Length; i++)
             {
                 if (a[i] < min)
                 {
@@ -124,7 +124,7 @@ namespace Homework4
         {
             int index = 0;
             int max = a[0];
-            for (int i = 0; i < a.Length; i ++)
+            for (int i = 0; i < a.Length; i++)
             {
                 if (a[i] > max)
                 {
@@ -148,14 +148,14 @@ namespace Homework4
             }
 
             Console.WriteLine(" ");
-            Console.Write($"Сумма элементов массива с нечетными индексами: {GetSumElementsWithEvenIdex(a)}");            
+            Console.Write($"Сумма элементов массива с нечетными индексами: {GetSumElementsWithEvenIdex(a)}");
         }
         public int GetSumElementsWithEvenIdex(int[] a)
         {
             int sum = 0;
             for (int i = 1; i < a.Length; i += 2)
             {
-               sum += i;
+                sum += i;
             }
             return sum;
         }
@@ -173,7 +173,7 @@ namespace Homework4
             }
 
             int[] reverseArr = GetReverseArray(a);
-            Console.WriteLine(" ");            
+            Console.WriteLine(" ");
             Console.Write($"Реверс массива: ");
             for (int i = 0; i < a.Length; i++)
             {
@@ -267,7 +267,7 @@ namespace Homework4
                 Console.Write(a[i] + " ");
             }
         }
-        public int [] SortArrayInAscendingOrder(int[] a)
+        public int[] SortArrayInAscendingOrder(int[] a)
         {
             for (int j = 0; j < a.Length; j++)
             {
@@ -304,7 +304,7 @@ namespace Homework4
                 Console.Write(a[i] + " ");
             }
         }
-        public int [] SortArrayInDescendingOrder(int[] a)
+        public int[] SortArrayInDescendingOrder(int[] a)
         {
             for (int j = 0; j < a.Length; j++)
             {
@@ -323,10 +323,4 @@ namespace Homework4
             }
             return a;
         }
-
-
-
-
-
     }
-}
