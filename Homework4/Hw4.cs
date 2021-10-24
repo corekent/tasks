@@ -32,8 +32,8 @@ namespace Homework4
         }
         public int GetMinElementInArray(int[] a)
         {
-            int min = 0;
-            for (int i = 0; i < a.Length; i++)
+            int min = a[0];
+            for (int i = 1; i < a.Length; i++)
             {
                 if (a[i] < min)
                 {
@@ -60,7 +60,7 @@ namespace Homework4
         }
         public int GetMaxElementInArray(int[] a)
         {
-            int max = 0;
+            int max = a[0];
             for (int i = 0; i < a.Length; i++)
             {
                 if (a[i] > max)
@@ -209,9 +209,13 @@ namespace Homework4
         public int GetCommendOddElements(int[] a)
         {
             int sum = 0;
-            for (int i = 1; i < a.Length; i += 2)
+            for (int i = 0; i < a.Length; i ++)
             {
+                if (a[i]  % 2 != 0)
+                {
                 sum += 1;
+                }
+                
             }
             return sum;
         }
@@ -324,3 +328,4 @@ namespace Homework4
             return a;
         }
     }
+}

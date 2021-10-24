@@ -76,7 +76,7 @@ namespace Homework5
             {
                 for (int j = 0; j < a.GetLength(1); j++)
                 {
-                    if (a[i, j] < max)
+                    if (a[i, j] > max)
                     {
                         max = a[i, j];
                     }
